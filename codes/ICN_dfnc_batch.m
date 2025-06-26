@@ -136,8 +136,8 @@ exe_task_connectivity_beta = cell2mat(task_connectivity_beta_all(exeReg));
 
 exe_task_table_beta = cell2table(num2cell(exe_task_connectivity_beta), 'VariableNames',couplenames_exe);
 
-writetable(exe_task_table_beta,'Beta_task_connectivity_Executive.xlsx');
-disp('Beta_task_connectivity_Executive.xlsx')
+writetable(exe_task_table_beta,'dfnc_executive_output.xlsx');
+disp('dfnc_executive_output.xlsx')
 
 
 %% memoload Regressors {'srtt', 3;'1geri', 4;'2geri', 4;'3geri', 4}
@@ -153,8 +153,8 @@ wm_task_connectivity_beta = cell2mat(task_connectivity_beta_all(wmReg));
 
 wm_task_table_beta = cell2table(num2cell(wm_task_connectivity_beta), 'VariableNames',couplenames_wm);
 
-writetable(wm_task_table_beta,'Beta_task_connectivity_Memoload.xlsx');
-disp('Beta_task_connectivity_Memoload.xlsx')
+writetable(wm_task_table_beta,'dfnc_memoryload_output.xlsx');
+disp('dfnc_memoryload_output.xlsx')
 
 
 
